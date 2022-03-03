@@ -1,0 +1,15 @@
+<div class="container mt-2 p-0 border border-dark rounded">
+    <ul class="tabs d-flex p-0 m-0 list-group flex-row">
+        <li *ngFor="let type of types; index as i" 
+        class="tab p-3 border border-bottom-0 border-dark rounded-top list-group-item" 
+        [routerLink]="['/navigation']"
+        [queryParams]="{id: i}"
+        [class.active]="currentType === type" 
+        (click)="this.currentType = type">
+        {{type | titlecase}}
+        </li>
+        
+    </ul>
+    
+        <app-tab [switchTabs]="currentType"></app-tab>
+</div>

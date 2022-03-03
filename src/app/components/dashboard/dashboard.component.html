@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+
+    <div class="card text-center mt-2 px-0 col">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <h2 class="card-title">
+                Welcome
+            </h2>
+            <p class="card-text">
+                With supporting text below as a natural lead-on to aditional content
+            </p>
+            <a [routerLink]="['/navigation']"
+            [queryParams]="{id: 0}" 
+            class="btn btn-primary">See Transactions</a>
+        </div>
+        <div class="card-footer">
+            <p class="mb-0">You have {{total}} transactions</p>
+        </div>
+    </div>
+
+
+    <div class="w-100"></div>
+
+            <app-dashboard-card [size]="files[0].data.length"
+            [type] = "files[0].type"
+            [id] = "{id: files[0].id}"
+            class="card text-center col"></app-dashboard-card>
+
+            <app-dashboard-card [size]="files[1].data.length"
+            [type] = "files[1].type"
+            [id] = "{id: files[1].id}"
+            class="card text-center col"></app-dashboard-card>
+        
+        <div class="w-100"></div>
+
+            <app-dashboard-card [size]="files[2].data.length"
+            [type] = "files[2].type"
+            [id] = "{id: files[2].id}"
+            class="card text-center col"></app-dashboard-card>
+
+            <app-dashboard-card [size]="files[3].data.length"
+            [type] = "files[3].type"
+            [id] = "{id: files[3].id}"
+            class="card text-center col"></app-dashboard-card>
+
+    </div>
+
+</div>
+

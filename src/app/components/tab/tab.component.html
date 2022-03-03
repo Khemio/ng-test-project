@@ -1,0 +1,14 @@
+<div *ngFor="let file of files; index as i" class="text-center">
+    <table class="table mb-0" *ngIf="currentType === files[i].type">               
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Account</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let file of files[i].data">
+            <td>{{file.name.first}} {{file.name.last}}</td>
+            <td>{{file.amount}}</td>
+        </tbody>
+    </table>
+</div>

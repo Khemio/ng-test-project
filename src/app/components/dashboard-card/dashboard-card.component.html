@@ -1,0 +1,11 @@
+    <div class="card-body">
+        <h2 class="card-title">
+            {{size}}
+        </h2>
+        <p class="card-text">
+            {{type | titlecase}}
+        </p>
+        <a [routerLink]="['/navigation']"
+        [queryParams]="id"
+        class="btn btn-primary">See All</a>
+    </div>

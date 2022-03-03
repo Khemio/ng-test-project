@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+
+// .container {
+//     width: max-content;
+// }
+
+.tab {
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #CCC;
+    color: black;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
